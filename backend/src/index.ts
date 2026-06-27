@@ -13,8 +13,6 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(cors({
-  origin: ["https://nexainventory.vercel.app", "http://localhost:5000"],
-  credentials: true,
 }));
 
 app.use(express.json());
