@@ -48,6 +48,7 @@ export default function LoginPage() {
       toast.error(msg);
     } catch (err) {
       const error = err as AxiosError<{ message: string }>;
+      console.log(error)
       const msg = error.response?.data?.message || "Unable to sign in";
       setError(msg);
       toast.error(msg);
