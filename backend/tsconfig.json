@@ -3,12 +3,16 @@
     "target": "ES2023",
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "outDir": "./dist",
     "rootDir": ".",
+    "outDir": "./dist",
+
+    "types": ["node"],
+    "lib": ["ES2023"],
+
     "strict": false,
     "esModuleInterop": true,
-    "skipLibCheck": true,
+    "skipLibCheck": true
   },
   "include": ["src/**/*", "prisma.config.ts"],
-  "exclude": ["node_modules", "dist", "generated"]
+  "exclude": ["node_modules", "dist"]
 }
